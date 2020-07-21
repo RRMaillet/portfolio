@@ -1,0 +1,274 @@
+:root {
+	--style-padding: 0 10rem;
+	--primary-font-color: #2b2b2b;
+	--secondary-font-color: #4a4a4a;
+	--tertiary-font-color: #c7c7c7;
+	--splash-color-one: #0246b3;
+}
+
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-size: 17px;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 2px;
+	color: var(--primary-font-color);
+
+}
+
+a {
+	color: var(--primary-font-color);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--splash-color-one);
+	text-decoration: underline;
+	transition: all .3s ease-in;
+}
+
+h3 {
+	margin-top: 5px;
+	font-size: 1.5rem;
+}
+
+.header {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	padding: var(--style-padding);
+}
+
+.header .profile-logo {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+}
+
+.header .profile-logo img {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+}
+
+.header .profile-text {
+	margin-left: 20px;
+}
+
+.header .profile-text a {
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+}
+
+.header .profile-text p {
+	font-size: 1rem;
+	margin-top: 2px;
+}
+
+.header .links {
+	display: flex;
+	margin-left: auto;
+	align-items: center;
+}
+
+.header .links a {
+	margin: 5px;
+}
+
+.content .scroll-down {
+	margin-top: 150px;
+	display: flex;
+	font-size: 3rem;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.content {
+	padding: var(--style-padding);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 850px;
+}
+
+.content .hero {
+	display: flex;
+	flex-direction: column;
+}
+
+.content .hero pitch {
+	font-size: 3rem;
+
+	line-height: 3.5rem;
+}
+
+.content .hero hook {
+	font-size: 2rem;
+
+	line-height: 3rem;
+	margin: 20px 0;
+}
+
+.content .hero .container {
+	margin-top: 5px;
+	font-size: 1.5rem;
+
+	line-height: 2rem;
+}
+
+.jumbotron {
+	background: var(--secondary-font-color);
+	height: 400px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.jumbotron .container {
+	height: 250px;
+	width: 250px;
+	background-color: var(--tertiary-font-color);
+	border-radius: 5%;
+}
+
+.jumbotron img {
+	border-top-left-radius: 5%;
+	border-top-right-radius: 5%;
+	height: 150px;
+	width: 100%;
+}
+
+.skills {
+	margin-top: 200px;
+	padding: var(--style-padding);
+}
+
+.skills .container {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto auto;
+	grid-template-areas: "skills-desc skills-list""tech-skills tech-skills";
+}
+
+.skills .skills-desc {
+	grid-area: skills-desc;
+	font-size: 1.5rem;
+}
+
+.skills .skills-desc p {
+	margin: 0;
+}
+
+.skills .skills-list {
+	grid-area: skills-list;
+	display: flex;
+	flex-direction: column;
+	padding-left: 15px;
+}
+
+.skills .skills-list p {
+	margin-top: 5px;
+}
+
+.skills .tech-skills {
+	margin-top: 125px;
+	margin-bottom: 100px;
+	grid-area: tech-skills;
+}
+
+.skills .tech-skills .tech-skills-lists {
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	grid-template-areas: "webdev infrastructure others";
+}
+
+.webdev {
+	grid-area: webdev;
+}
+
+.infrastructure {
+	grid-area: infrastructure;
+}
+
+.others {
+	grid-area: others;
+}
+
+.footer {
+	background-color: var(--primary-font-color);
+	height: 500px;
+}
+
+.footer .inner-footer {
+	padding: var(--style-padding);
+	display: grid;
+	grid-template-rows: 30px auto;
+	grid-template-columns: 33% 33% 33%;
+}
+
+.footer .inner-footer .contact form {
+	margin-top: 30px;
+	justify-items: center;
+	color: white;
+}
+
+.footer .inner-footer .contact form label {
+	font-size: .9rem;
+	margin-top: 7px;
+}
+
+.footer .inner-footer .contact form span {
+	font-size: .65rem;
+}
+
+.footer .inner-footer .contact form label,
+.footer .inner-footer .contact form input {
+	display: block;
+}
+
+#submit {
+	margin-top: 7px;
+}
+
+@media screen and (max-width: 600px) {
+	:root {
+		--style-padding: 10px;
+	}
+
+	.content .hero pitch {
+		font-size: 2.5rem;
+		line-height: 2.5rem;
+	}
+
+	.content .hero hook {
+		font-size: 1.5rem;
+
+		line-height: 2rem;
+		margin: 20px 0;
+	}
+
+	.content .hero .container {
+		margin-top: 5px;
+		font-size: 1rem;
+
+		line-height: 1rem;
+	}
+
+	.skills .container {
+		display: grid;
+		grid-template-rows: auto auto auto;
+		grid-template-areas: "skills-desc skills-desc""skills-list skills-list""tech-skills tech-skills";
+	}
+
+	.skills .tech-skills .tech-skills-lists {
+		display: grid;
+		grid-template-rows: 33% 33% 33%;
+		grid-template-areas: "webdev webdev""infrastructure infrastructure""others others";
+	}
+}

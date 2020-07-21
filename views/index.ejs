@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= title %></title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <link rel='stylesheet' href='/stylesheets/styles.css' />
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="profile-logo">
+        <a href="#"><img src="images/0.jpeg" alt="" srcset=""></a>
+        <div class="profile-text">
+          <a class="a" href="/">Robert Maillet</a>
+          <p class="p">Web Developer / Infrastructure Specialist</p>
+        </div>
+      </div>
+      <div class="links">
+        <a href="#" class="href">Blog</a>
+        <a href="#contact" class="href">Contact</a>
+        <a href="#" class="href">Lab</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="hero">
+        <pitch>Web Developer / Infrastructure Specialist;</pitch>
+        <pitch>15 years of making things do things.</pitch>
+        <hook>I find solutions to your problems so you don't have to.</hook>
+        <div class="container">
+          <div class="cta">Do you have a problem? An idea? Quarantine driving you nuts?</div>
+          <div class="cta">Let's chat - <a href="mailto:inquiries@digitalkeepsecurity.com">inquiries@digitalkeepsecurity.com</a></div>
+        </div>
+        <div class="scroll-down">
+          <a id="scroll" href="#scroll"><i class="fas fa-angle-double-down"></i></a>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="portfolio" class="portfolio">
+      <div class="jumbotron">
+        <div id="one" class="container">
+          <img src="images/camping.jpg" alt="">
+        </div>
+        <div id="two" class="container">
+          <img src="images/surfing.jpg" alt="">
+        </div>
+        <div class="container"></div>
+      </div>
+    </div>
+
+
+
+    <div id="skills" class="skills">
+      <div class="container">
+        <div class="skills-desc">
+          <p>Technical skills are valuable. The ability to interact, communicate, and exchange ideas is what makes all the difference.  Here are some highlights that I offer:</p>
+        </div>
+        <div class="skills-list">
+          <h3>Problem Solving</h3>
+          <p>Breaking down problems into components and addressing each one in a systematic and cohesive way.</p>
+
+          <h3>Communications</h3>
+          <p>Articulating solutions in a plain and concise manner that avoids confusion and misunderstandings.</p>
+          <h3>Bilingualism</h3>
+          <p>Come j'ai grandi sur la c&ocirc;te est du Canada, j'ai bien aussi la capacit&eacute;e d'incorporer mon bilinguisme et de vous l'offrire a partir de mon r&eacute;pertoire. </p>
+        </div>
+        <div class="tech-skills">
+          <h3>Here are my top skills. Any questions? <a href="mailto:inquiries@digitalkeepsecurity.com">Contact me</a>.</h3>
+          <div class="tech-skills-lists">
+            <div class="webdev">
+            <p>Web Development</p>            
+            <ul>
+              <li>Node.js / Express</li>
+              <li>MongoDB</li>
+              <li>HTML/CSS/Javascript</li>
+              <li>Git</li>
+            </ul>
+          </div>
+            <div class="infrastructure">
+              <p>Infrastructure</p>            
+              <ul>
+                <li>Hosting</li>
+                <li>PKI Cert management</li>
+                <li>DNS</li>
+                <li>Azure AD</li>
+              </ul>
+            </div>
+            <div class="others">
+              <p>Misc</p>            
+              <ul>
+                <li>Office 365</li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="inner-footer">
+        <div class="links"></div>
+        <div class="social-media"></div>
+        <div id="contact" class="contact">
+          <form action="mailto:inquiries@digitalkeepsecurity.com?subject=Website Feedback" method="post">
+            <label for="name">Name <span>(required)</span></label>
+            <input type="text" name="name" id="name" placeholder="name" required>
+            <label for="email">Email <span>(required)</span></label>
+            <input type="text" name="email" id="email" placeholder="email" required>
+            <label for="message">Message <span>(required)</span></label>
+            <textarea name="contact" id="contact" cols="32" rows="10" required></textarea>
+            <input id="submit" type="submit" value="Contact Me">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let scrollButton = document.querySelector('#scroll');
+    let secondArea = document.querySelector('#portfolio');
+
+    scrollButton.addEventListener('click', () => {
+        scrollButton.scrollIntoView({
+            behavior: 'smooth'
+        });
+      });
+  </script>
+</body>
+
+</html>
